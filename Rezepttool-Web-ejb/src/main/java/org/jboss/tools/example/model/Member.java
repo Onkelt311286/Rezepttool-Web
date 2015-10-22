@@ -48,7 +48,11 @@ public class Member implements Serializable {
     @Size(min = 1, max = 25)
     @Pattern(regexp = "[^0-9]*", message = "Must not contain numbers")
     private String name;
-
+    
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[^0-9]*", message = "Must not contain numbers")
+    private String nachname;
+    
     @NotNull
     @NotEmpty
     @Email
